@@ -5,6 +5,7 @@ from sklearn.svm import SVR
 # generate sample data:
 X = np.sort(5 * np.random.rand(40,1), axis=0)
 Y = np.cos(X).ravel()
+   # putting sin or cos here makes it fit to the rbf model
 
 # Add noise to targets:
 Y[::5] += 3 * (0.5 - np.random.rand(8))
